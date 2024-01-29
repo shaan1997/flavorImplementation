@@ -11,6 +11,16 @@
         "example": "Mundo"
       }
     }
-  }
+  },
+
+  "amount":"Balance restante {amount}",
+      "@amount": {
+        "placeholders": {
+          "amount": {
+            "type": "int",
+            "format": "compactCurrency"
+          }
+        }
+      }
 
 }

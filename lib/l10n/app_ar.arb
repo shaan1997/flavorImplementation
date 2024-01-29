@@ -1,0 +1,26 @@
+{
+  "@@locale": "ar",
+
+  "helloWorld": "مرحبا بالعالم",
+
+  "hello": "مرحبا {userName}",
+  "@hello": {
+    "placeholders": {
+      "userName": {
+        "type": "String",
+        "example": "بالعالم"
+      }
+    }
+  },
+
+  "amountBalance":"الرصيد المتبقي {amount}",
+    "@amountBalance": {
+      "placeholders": {
+        "amount": {
+          "type": "int",
+          "format": "compactSimpleCurrency"
+        }
+      }
+    }
+
+}

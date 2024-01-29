@@ -5,16 +5,16 @@ import 'package:internationalization_flutter/app_locale.dart';
 import 'package:provider/provider.dart';
 
 class MyHomePage extends StatelessWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, this.title}) : super(key: key);
 
-  final String title;
+  final String? title;
 
   @override
   Widget build(BuildContext context) {
     var language = Provider.of<AppLocale>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppLocalizations.of(context).helloWorld),
+        title: Text(AppLocalizations.of(context)!.helloWorld),
       ),
       body: Center(
         child: Column(
@@ -26,16 +26,16 @@ class MyHomePage extends StatelessWidget {
                 Text('English'),
                 CupertinoSwitch(
                   onChanged: (bool value) {
-                    value == true ? language.changeLocale(Locale('es')) : language.changeLocale(Locale('en'));
+                    value == true ? language.changeLocale(Locale('ar')) : language.changeLocale(Locale('en'));
                   },
                   value: language.locale == Locale('en') ? false : true,
                 ),
-                Text('Spanish'),
+                Text('Arabic'),
               ],
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(AppLocalizations.of(context).helloWorld),
+              child: Text(AppLocalizations.of(context)!.helloWorld),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -52,7 +52,7 @@ class MyHomePage extends StatelessWidget {
                 // Using a Builder here to get the correct BuildContext.
                 child: Builder(
                   builder: (BuildContext buildContext){
-                    return Text(AppLocalizations.of(buildContext).helloWorld);
+                    return Text(AppLocalizations.of(buildContext)!.helloWorld);
                   },
                 ),
               ),
@@ -66,7 +66,13 @@ class MyHomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                  AppLocalizations.of(context).hello('Flutter'),
+                  AppLocalizations.of(context)!.hello('Flutter'),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                AppLocalizations.of(context)!.amountBalance(120000000),
               ),
             ),
           ],

@@ -14,6 +14,17 @@
         "example": "World"
       }
     }
+  },
+
+  "amountBalance":"Remaining balance {amount}",
+  "@amountBalance": {
+    "description": "To get balance amount",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "compactSimpleCurrency"
+      }
+    }
   }
 
 }
