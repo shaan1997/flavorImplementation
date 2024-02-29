@@ -10,8 +10,7 @@
 
 ## Android Configuration:
 -> Adding build flavors to Android
- ![img.png](img.png)
-
+![Screenshot 2024-02-29 at 9.05.40 PM.png](Screenshot%202024-02-29%20at%209.05.40%20PM.png)
 
 
 ## IOS Configuration:  
