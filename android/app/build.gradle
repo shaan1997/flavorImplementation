@@ -34,6 +34,7 @@ android {
 
     lintOptions {
         disable 'InvalidPackage'
+        checkReleaseBuilds false
     }
 
     defaultConfig {
@@ -45,6 +46,29 @@ android {
         versionName flutterVersionName
     }
 
+    flavorDimensions "flavors"
+    productFlavors {
+
+        dev {
+            dimension "flavors"
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+            resValue "string", "app_name", "Dev-Internationalization"
+        }
+
+        qa {
+            dimension "flavors"
+            applicationIdSuffix ".qa"
+            versionNameSuffix "-qa"
+            resValue "string", "app_name", "Qa-Internationalization"
+        }
+
+        prod {
+            dimension "flavors"
+            resValue "string", "app_name", "Internationalization"
+        }
+    }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
@@ -53,6 +77,8 @@ android {
         }
     }
 }
+
+
 
 flutter {
     source '../..'

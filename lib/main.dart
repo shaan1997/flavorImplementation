@@ -4,9 +4,9 @@ import 'package:internationalization_flutter/app_locale.dart';
 import 'package:internationalization_flutter/home_page.dart';
 import 'package:provider/provider.dart';
 
-void main() {
-  runApp(MyApp());
-}
+// void main() {
+//   runApp(MyApp());
+// }
 
 class MyApp extends StatelessWidget {
 

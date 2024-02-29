@@ -1,16 +1,38 @@
-# internationalization_flutter
+# Flavors in Flutter
 
-A new Flutter application to demonstrate internationalization 
+-> Create flavor configuration file
+![img_7.png](img_7.png)
+-> Create main.dart file for each flavors
+![img_8.png](img_8.png)
+-> Run app by following command from cmd
+   flutter run --flavor <flavors name> -t <flavors main.dart file name>(for example: lib/main_dev.dart)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Android Configuration:
+-> Adding build flavors to Android
+ ![img.png](img.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## IOS Configuration:  
+-> Add custom schemes
+ ![img_1.png](img_1.png)
+
+-> Add configurations for new added schemes
+![img_3.png](img_3.png)
+
+-> Manage new added schemes
+![img_4.png](img_4.png)
+
+
+-> Added .xcconfig file for each new scheme
+![img_5.png](img_5.png)
+
+-> Config new created .xcconfig file in build configuration
+![img_6.png](img_6.png)
+
+
+For reference:
+https://medium.com/@animeshjain/build-flavors-in-flutter-android-and-ios-with-different-firebase-projects-per-flavor-27c5c5dac10b
+
+   
